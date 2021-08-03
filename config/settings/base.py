@@ -74,6 +74,8 @@ THIRD_PARTY_APPS = [
     "rest_framework",
     "rest_framework.authtoken",
     "corsheaders",
+    "django_filters",
+    "drf_yasg",
 ]
 
 LOCAL_APPS = [
@@ -281,6 +283,7 @@ REST_FRAMEWORK = {
         "rest_framework.authentication.TokenAuthentication",
     ),
     "DEFAULT_PERMISSION_CLASSES": ("rest_framework.permissions.AllowAny",),
+    'PAGE_SIZE': 1
 }
 
 # django-cors-headers - https://github.com/adamchainz/django-cors-headers#setup
